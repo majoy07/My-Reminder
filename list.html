@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title> Application </title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		 <link href="css/style.css" rel="stylesheet">
+		<script src="Storage.js"></script>
+		<link rel="stylesheet" href="StorageStyle.css">
+	</head>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Home</a>
+            </li>
+           
+            <li class="nav-item ">
+              <a class="nav-link " href="input.html" >
+               Create list
+              </a>
+            </li>
+			<li class="nav-item ">
+              <a class="nav-link active" href="list.html" >
+               View list
+              </a>
+            </li>
+			<li class="nav-item ">
+              <a class="nav-link " href="cals.html" >
+               View calendar
+              </a>
+            </li>
+          </ul>
+        </div>
+		</button>
+    </nav><br/><br/>
+<body onload="doShowAll()" style="background-image: url('reminders/backgrounds.jpg')" class="background-img-fluid " alt="Responsive background-image" >
+<form name=ShoppingList>
+<div class="container">
+
+	<center>
+		<h1><font color="green">Reminders List</font></h1>	
+			<font color="blue">
+			<center><table class="table table-bordered " id=list>	
+			</table>
+			</center>
+			<p>
+				<br/><label><input type=button value="Clear" onclick="ClearAll()"></font>
+					<i>*Remove all Items*</i></label>
+			</p>
+		
+	</center>
+</div>	
+	</form>
+		 <script src="jquery/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.bundle.min.js"></script>		
+</body>
+</html>

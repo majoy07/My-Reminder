@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title> Application </title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		 <link href="css/style.css" rel="stylesheet">
+		<script src="Storage.js"></script>
+		<link rel="stylesheet" href="StorageStyle.css">
+
+</head>
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Home</a>
+            </li>
+           
+            <li class="nav-item ">
+              <a class="nav-link active " href="input.html" >
+               Create list
+              </a>
+            </li>
+			<li class="nav-item ">
+              <a class="nav-link " href="list.html" >
+               View list
+              </a>
+            </li>
+			<li class="nav-item ">
+              <a class="nav-link " href="cals.html" >
+               View calendar
+              </a>
+            </li>
+          </ul>
+        </div>
+		</button>
+    </nav><br/>
+<body onload="doShowAll()" style="background-image: url('reminders/backgrounds.jpg')" class="background-img-fluid " alt="Responsive background-image">
+	
+	<form name=ShoppingList>
+		<div id="PlayArea">	
+		
+				<center>
+					<br/><h1><font color="success">Create List</font></h1>
+					<br/><textarea class="form-control " id="exampleFormControlTextarea1" style="height:100px; width:300px;" name=name placeholder="Enter Reminder" ></textarea>
+					<br/><td><div class="text-success"><h4><b>Date & Time:</b></h4></div>
+					<input type="datetime-local" name=data style="height:40px;"> <br/><br/><br/>
+				<div class="row">
+				<div class="col-4"></div>
+				<div class="col-4">			
+				<button type="reset" class="btn btn-danger btn-sm">Cancel</button>
+				<button type="submit" class="btn btn-success btn-sm" onclick= "SaveItem()">Save</button></div>			 		
+				<div class="col-4"></div>
+				</center>
+				</div>
+		</div>
+	</form>
+	 <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>			
+</body>
+</html>
